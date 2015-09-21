@@ -1,0 +1,29 @@
+%html
+  %meta{ content: "text/html; charset=utf-8", http-equiv: "Content-Type" }
+  %head
+    %link{ href: "bower_components/bootstrap/dist/css/bootstrap.min.css", rel: "stylesheet", type:"text/css" }
+    %link{ href: "style.css", rel: "stylesheet", type:"text/css" }
+  %body
+    %template{ id:"some-element-template" }
+      %form{ class: "some-form" }
+        %button{ class: "create-button" }  Create
+        %button{ class: "save-button" } Save
+        %span{ class: "input-label" } Name:
+        %input{ class: "name-input" }
+    .container
+      %some-element-name
+    / Other peoples' stuff
+    %script{src: "bower_components/underscore/underscore-min.js"}
+    %script{src: "bower_components/lodash/lodash.min.js"}
+    %script{src: "bower_components/backbone/backbone.js"}
+    %script{src: "bower_components/backbone.localStorage/backbone.localStorage-min.js"}
+    %script{src: "bower_components/jquery/dist/jquery.min.js"}
+    %script{src: "bower_components/bootstrap/dist/js/bootstrap.min.js"}
+    %script{src: "bower_components/x-tag-core/dist/x-tag-core.js"}
+
+    / My stuff
+    %script{src: "some.xtag.js"}
+    %script{src: "humble.js"}
+    %script{src: "humble.module.js"}
+    %script{src: "humble.app.js"}
+    %script $(function() { humble.app.init() } );

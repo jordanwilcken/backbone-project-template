@@ -1,0 +1,24 @@
+{
+  "name": "[insert name here]",
+  "version": "0.0.0",
+  "authors": [
+    "jordanwilcken@github.com <jordanwilcken@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "lodash": "~3.10.1",
+    "backbone": "~1.2.3",
+    "backbone.localStorage": "~1.1.16",
+    "x-tag-core": "~1.1.13",
+    "bootstrap": "~3.3.5"
+  }
+}
